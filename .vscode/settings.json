@@ -1,0 +1,6 @@
+{
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.tabSizingFixedMinWidth": 50,
+  "editor.tabSize": 2
+}
