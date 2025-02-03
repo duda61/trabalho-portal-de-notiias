@@ -1,32 +1,32 @@
-#primary{
+#primary {
   padding-block: 20px;
+  display: grid;  /* Usando grid em vez de flex para compatibilidade com a estrutura do grid */
 
-  div{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-  }
-
-
-  div:nth-child(2){
-    margin-inline:auto;
-
-  }
-
-div:nth-child(3) {
-  justify-self: end;
+  grid-template-columns: auto 1fr auto;  /* Definindo as colunas para os três filhos */
+  align-items: center;
+  gap: 16px;  /* Espaçamento entre os elementos */
 }
 
-
+#primary div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-#secodary{
+#primary div:nth-child(2) {
+  margin-inline: auto;  /* Isso vai centralizar o segundo div */
+}
 
-  padding-block:14px;
-  border:solid 1px var(--stroke-color);
-  border-inline:none ;
-  justify-content: space-between;
+#primary div:nth-child(3) {
+  justify-self: end;  /* Ajuste do alinhamento do terceiro div */
+}
 
-
+#secondary {
+  padding-block: 14px;
+  border: solid 1px var(--stroke-color);
+  border-inline: none;
+  display: grid;  /* Se você precisar de um grid no #secondary, aplique aqui também */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Exemplo de grid responsivo */
+  justify-items: center;  /* Centraliza os links dentro do grid */
+  gap: 8px;
 }

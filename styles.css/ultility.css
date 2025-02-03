@@ -1,17 +1,14 @@
-.grid{
+/* Adicionando o grid-cols-4 para definir 4 colunas */
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr); /* Define 4 colunas iguais */
+}
+
+/* Definindo o grid em geral */
+.grid {
   display: grid;  
 }
 
-.grid-flow-col{
-
-grid-auto-flow:column
-}
-
-.grid-cols-2{
-  grid-template-columns:1fr 1fr ;
-}
-
-
-.gap-16{
-  gap:16px
+/* Se precisar de outros estilos para o grid */
+.gap-16 {
+  gap: 16px;  /* Espaçamento entre as imagens */
 }
