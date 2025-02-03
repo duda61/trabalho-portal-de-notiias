@@ -5,42 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Notícias</title>
 
-    <!-- Pré-carregamento de fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="styles.css/ultility.css">
     <link rel="stylesheet" href="styles.css/global.css">
     <link rel="stylesheet" href="styles.css/header.css">
     <link rel="stylesheet" href="styles.css/index.css">
     <link rel="stylesheet" href="styles.css/seotions.css">
+    <link rel="stylesheet" href="styles.css/ultility.css">
 
-    <!-- Fonte personalizada -->
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Archivo:wght@100..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="container">
         <nav id="primary" class="grid grid-flow-col gap-16">
             <figure class="card">
-
-            <figcaption>
-                <span class="content-tag">robotica</span>
-                <h2  class="text-2xl">
-                     Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas residências.</h2>
-            </figcaption>
+                <img src="imagens/Tech News.png" alt="TechNews logo">
             </figure>
+            <div>
                 <img src="imagens/List.svg" alt="Ícone do menu">
                 <strong>Menu</strong>
             </div>
-            <img src="imagens/Tech News.png" alt="TechNews logo">
             <div>
                 <strong>Buscar</strong>
                 <img src="imagens/MagnifyingGlass.svg" alt="Ícone de lupa para pesquisa">
             </div>
         </nav>
 
-        <nav id="secondary" class="grid grid-flow-col">
+        <nav id="secondary" class="grid grid-flow-col gap-8">
             <a href="#">Inteligência Artificial</a>
             <a href="#">Blockchain</a>
             <a href="#">Hologramas</a>
@@ -52,48 +44,108 @@
 
     <main class="grid container">
         <section id="featured" class="grid grid-cols-4 gap-16">
-            <div class="card">
-
-
-            </div>
-            <figure>
-                <img src="assets/Image 01.png" alt="">
+            <figure class="card featured-img">
+                <img src="assets/Image 01.png" alt="Robôs domésticos">
+                <figcaption>
+                    <span class="content-tag">Robótica</span>
+                    <h2 class="text-lg">
+                        Robôs domésticos começam a ser adotados para tarefas diárias, 
+                        prometendo mais conforto e eficiência nas residências.
+                    </h2>
+                </figcaption>
+            </figure>
+            
+            <figure class="card">
+                <img src="assets/Image 02.png" alt="Novo Smartphone Projetor">
+                <figcaption>
+                    <span class="content-tag">Tecnologia</span>
+                    <h2 class="text-lg">
+                        Novo Smartphone Projetor 3D chega ao mercado, 
+                        transformando a forma como vemos nossas telas!
+                    </h2>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="assets/Image 02.png" alt="">
-            </figure>
-                
-            <figure>
-                <img src="assets/Image 03.png" alt="">
-            </figure>
-
-            <figure>
-                <img src="assets/Image 04.png" alt="">
-            </figure>
-
-            <figure>
-                <img src="assets/Image 05.png" alt="">
+            <figure class="card">
+                <img src="assets/Image 03.png" alt="Relógio Inteligente">
+                <figcaption>
+                    <span class="content-tag">Saúde</span>
+                    <h2 class="text-lg">
+                        Empresa lança relógio inteligente capaz de monitorar a saúde mental, 
+                        oferecendo insights valiosos para o bem-estar pessoal.
+                    </h2>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="assets/Image 06.png" alt="">
+            <figure class="card">
+                <img src="assets/Image 04.png" alt="Nova Geração de Consoles">
+                <figcaption>
+                    <span class="content-tag">Games</span>
+                    <h2 class="text-lg">
+                        Nova geração de consoles de videogame é lançada, trazendo gráficos 
+                        ultra-realistas e experiências de jogo totalmente envolventes.
+                    </h2>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="assets/Image 07.png" alt="">
+            <figure class="card">
+                <img src="assets/Image 05.png" alt="IA Prevendo Eventos">
+                <figcaption>
+                    <span class="content-tag">Inteligência Artificial</span>
+                    <h2 class="text-lg">
+                        Empresa surpreende ao anunciar um algoritmo capaz de prever eventos futuros com alta precisão.
+                    </h2>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="assets/Image 08.png" alt="">
+            <figure class="card">
+                <img src="assets/Image 06.png" alt="Carros autônomos">
+                <figcaption>
+                    <span class="content-tag">Mobilidade</span>
+                    <h2 class="text-lg">
+                        Carros autônomos avançam no mercado e podem substituir motoristas humanos em poucos anos.
+                    </h2>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="assets/Image 09.png" alt="">
+            <figure class="card">
+                <img src="assets/Image 07.png" alt="Robôs na Medicina">
+                <figcaption>
+                    <span class="content-tag">Medicina</span>
+                    <h2 class="text-lg">
+                        Robôs cirúrgicos aprimoram procedimentos médicos e reduzem riscos em operações complexas.
+                    </h2>
+                </figcaption>
             </figure>
 
-            <figure>
-                <img src="assets/Image 10.png" alt="">
+            <figure class="card">
+                <img src="assets/Image 08.png" alt="Exploração Espacial">
+                <figcaption>
+                    <span class="content-tag">Espaço</span>
+                    <h2 class="text-lg">
+                        Novo foguete da NASA promete revolucionar as missões tripuladas para Marte.
+                    </h2>
+                </figcaption>
+            </figure>
+
+            <figure class="card">
+                <img src="assets/Image 09.png" alt="Óculos de Realidade Aumentada">
+                <figcaption>
+                    <span class="content-tag">Realidade Aumentada</span>
+                    <h2 class="text-lg">
+                        Óculos inteligentes com realidade aumentada ganham novas funções e prometem substituir smartphones.
+                    </h2>
+                </figcaption>
+            </figure>
+
+            <figure class="card">
+                <img src="assets/Image 10.png" alt="Drones autônomos">
+                <figcaption>
+                    <span class="content-tag">Aviação</span>
+                    <h2 class="text-lg">
+                        Drones autônomos começam a ser utilizados para entregas de longa distância.
+                    </h2>
+                </figcaption>
             </figure>
         </section>
     </main>

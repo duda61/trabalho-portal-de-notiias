@@ -1,16 +1,32 @@
-/* Adicionando o grid-cols-4 para definir 4 colunas */
+/* Definição do grid para 4 colunas */
+.grid {
+  display: grid;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, 1fr); /* Define 4 colunas iguais */
 }
 
-/* Definindo o grid em geral */
-.grid {
-  display: grid;  
+/* Espaçamento entre os elementos do grid */
+.gap-16 {
+  gap: 16px;
 }
 
-/* Se precisar de outros estilos para o grid */
-.gap-16 {
-  gap: 16px;  /* Espaçamento entre as imagens */
+/* Definição de tamanhos de texto */
+.text-2xl {
+  font-size: var(--h1);
+}
+
+.text-xl {
+  font-size: var(--h2);
+}
+
+.text-lg {
+  font-size: var(--h3);
+}
+
+.text-sm {
+  font-size: var(--text-sm);
 }
 
 #featured {
@@ -31,19 +47,31 @@
   height: 100%;
   object-fit: cover;
 }
-
-.text-2xl{
- font: var(--h1);
+#featured {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
 }
 
-.text-xl{
- font: var(--h2);
+#featured figure {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 
-.text-lg{
-  font: var(--h3);
- }
+#featured figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
- .text-sm{
-  font: var(--text-sm);
- }
+/* Styling for the featured large image */
+#featured .featured-img {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#featured .featured-img img {
+  aspect-ratio: 16 / 9;
+}
